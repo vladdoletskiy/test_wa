@@ -7,7 +7,12 @@ import apple from "./img/apple.png";
 import telegram from "./img/telegram.png";
 import windows from "./img/windows.png";
 
-
+const logoList = [
+  {
+    img: youtube,
+    title: () => <>Это сделали <br /> МЫ!</>
+  }
+]
 const MoreContent = () => {
   return (
     <div> 
@@ -28,10 +33,12 @@ const MoreContent = () => {
         </div>
         <div className = "line2" />
         <div className = "our_projects">
-          <div className = "logo_projects"> 
-            <img className = "img_logo" src = {youtube} />
-            <h6 className = "text_logo">Это сделали <br /> МЫ!</h6>
-          </div>
+          {logoList.map((item) => (
+            <div className = "logo_projects">
+              <img className = "img_logo" src = {item.img} />
+              <h6 className = "text_logo">{item.title()}</h6>
+            </div>
+          ))}
           <div className = "logo_projects"> 
             <img className = "img_logo" src = {google} />
             <h6 className = "text_logo">Это сделали <br /> МЫ!</h6>
