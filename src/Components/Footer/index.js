@@ -2,7 +2,7 @@ import React from 'react';
 import "./footer.style.css";
 
 
-const Footer = () => {
+const Index = () => {
   return (
   <footer id = "footer">
       <div id = "footer_container"> 
@@ -37,7 +37,7 @@ const Footer = () => {
           </div>
       </div>
       </div>
-      <div className = "line2"></div>
+      <div className = "line2" />
       <div>
           <h3 className="last_word"> &#9940; Первый проект сайта - Vlad Doletskiy</h3>
       </div>
@@ -46,4 +46,4 @@ const Footer = () => {
   )
 };
 
-export default Footer;
+export default Index;

@@ -8,13 +8,13 @@ import foto4 from "./img/g5.jpg";
 
 const Gallery  = () => {
   return (
-    <div class="fotorama"
+    <div className="fotorama"
     data-transition="crossfade"
     data-loop="true">
-    <img src = {foto}></img>
-    <img src = {foto3}></img>
-    <img src = {foto4}></img>
-    <img src = {foto2}></img>
+    <img src = {foto} />
+    <img src = {foto3} />
+    <img src = {foto4} />
+    <img src = {foto2} />
   </div>
   )
 };
