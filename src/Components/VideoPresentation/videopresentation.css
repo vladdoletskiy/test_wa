@@ -1,0 +1,28 @@
+#baner_for_video {
+    width: 100%;
+    height: 570px; 
+    background-image: url(./img/google.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+#video {
+    z-index: 2;
+    position: absolute;
+    top: 220px;
+    /* border-radius: 5px; хотел округлить края, но не работает
+     */
+
+
+}
+#cover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-bottom: 165px;
+    
+}
