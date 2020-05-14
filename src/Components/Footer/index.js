@@ -2,7 +2,7 @@ import React from 'react';
 import "./footer.style.css";
 
 
-const Index = () => {
+const Footer = () => {
   return (
   <footer id = "footer">
       <div id = "footer_container"> 
@@ -46,4 +46,4 @@ const Index = () => {
   )
 };
 
-export default Index;
+export default Footer;
