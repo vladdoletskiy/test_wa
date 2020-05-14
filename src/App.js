@@ -5,7 +5,7 @@ import MoreContent from "./Components/Content1/MoreContent";
 import Gallery from "./Components/Gallery/Gallery";
 import VideoPresentation from "./Components/VideoPresentation/VideoPresentation";
 import Mailing from "./Components/Mailing/Mailing";
-import Footer from "./Components/Footer/Footer";
+import Footer from "./Components/Footer";
 
 function App() {
   return (

@@ -13,9 +13,9 @@ const Content = () => {
                     Мы создали всё чем ты пользуешься
                 </h2>
                 <h2 className = "text_for_content2">
-                    Да, это так. Мы боги в IT. <br></br>
+                    Да, это так. Мы боги в IT. <br/>
                     До сих пор считаешь, 
-                    что Стив Джобс придумал Apple?<br></br>
+                    что Стив Джобс придумал Apple?<br/>
                     Нет! Это сделали мы. 
                 </h2>
             </div>
@@ -23,19 +23,19 @@ const Content = () => {
                 <img src = {logo} className = "image"/>
                 <div className = "minicont">
                     <h1 className = "fun_advert">Instagram</h1>
-                    <h2 className = "fun_advert2">Это мы придумали <br></br>
+                    <h2 className = "fun_advert2">Это мы придумали <br/>
                     фоткать еду</h2>
                 </div>
                 <img src = {logo2} className = "image"/>
                 <div className = "minicont">
                     <h1 className = "fun_advert">Facebook</h1>
-                    <h2 className = "fun_advert2">Это мы придумали <br></br>
+                    <h2 className = "fun_advert2">Это мы придумали <br />
                     лайкать бывшего</h2>
                 </div>
                 <img src = {logo3} className = "image"/>
                 <div className = "minicont">
                     <h1 className = "fun_advert">Wikipedia</h1>
-                    <h2 className = "fun_advert2">Это мы написали реферат <br></br>
+                    <h2 className = "fun_advert2">Это мы написали реферат <br />
                     для твоей сестры</h2>
                 </div>  
             </div>

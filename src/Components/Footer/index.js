@@ -37,7 +37,7 @@ const Footer = () => {
           </div>
       </div>
       </div>
-      <div className = "line2"></div>
+      <div className = "line2" />
       <div>
           <h3 className="last_word"> &#9940; Первый проект сайта - Vlad Doletskiy</h3>
       </div>
