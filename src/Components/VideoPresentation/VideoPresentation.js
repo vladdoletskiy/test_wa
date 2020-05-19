@@ -6,15 +6,15 @@ const VideoPresentation = () => {
   return (
   <div id = "cover" >
       <div id = "baner_for_video" />
-        <div id= "video">
-            <iframe width="970" height="430" 
+         <div id= "video">
+             <iframe className = "youtube" width="970" height="430" 
             src="https://www.youtube.com/embed/xewxLp3KeGE" 
             frameBorder="0"
             allow="accelerometer; autoplay; 
             encrypted-media; gyroscope; 
             picture-in-picture" 
-            allowFullScreen />
-        </div>
+            allowFullScreen /> 
+        </div> 
   </div>
   )
 };

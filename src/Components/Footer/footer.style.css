@@ -45,3 +45,49 @@
     text-align: center;
     color: #999999;
 }
+
+@media(max-width:970px) {
+    #footer {
+        max-width: 768px;
+    }
+    #footer_container {
+        max-width: 768px;
+    }
+    
+}
+@media(max-width:750px) {
+  #footer {
+      max-width: 375px;
+  }
+  #footer_container {
+    max-width: 375px;
+    
+}
+}
+@media(max-width:375px) {
+    #footer {
+        max-width: 375px;
+
+    }
+    #footer_container {
+      max-width: 375px;
+      max-height: 200px;
+  }
+  
+
+  .list {
+      margin: 10px 15px 0 15px;
+      
+      
+  }
+  .contacts {
+      display: none;
+} 
+
+.list_link {
+    margin: 10px 0 5px 0;
+}
+.list_name {
+    margin: 0 0 5px 0;
+}
+}

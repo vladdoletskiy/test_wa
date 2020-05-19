@@ -1,9 +1,3 @@
-body {
-    position: relative;
-    width: 100%;
-
-}
-
 #baner {
     width: 100%;
     height: 900px; 
@@ -18,7 +12,7 @@ body {
 .header {
     display: flex;
     justify-content: flex-end;
-    margin-right: 150px;
+    margin-right: 5%;
 
 
 }
@@ -101,6 +95,43 @@ button:focus {
 
     
 }
+
+.firstscreen {
+    max-width: 1920px;
+    margin: 0px auto;
+    padding: 0px 15px;
+  }
+
+@media(max-width:970px) {
+      .firstscreen {
+          max-width: 768px;
+      }
+      .header {
+        max-width: 100%;
+      }
+  }
+@media(max-width:750px) {
+    .firstscreen {
+        max-width: 375px;
+    }
+    .header {
+        max-width: 100%;
+      }
+}
+
+@media(max-width:375px) {
+    .firstscreen {
+        max-width: 375px;
+    }
+    .header {
+        max-width: 100%;
+      }
+      .header_link {
+        font-size: 9px;
+      }
+}
+
+
 
 /* @media (max-width: 768px) {
     .first_screen {
