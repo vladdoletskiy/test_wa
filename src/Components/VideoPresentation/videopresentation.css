@@ -1,23 +1,3 @@
-#baner_for_video {
-    width: 100%;
-    height: 570px; 
-    background-image: url(./img/google.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    color: white;
-    position: relative;
-    z-index: 1;
-}
-#video {
-    z-index: 2;
-    position: absolute;
-    top: 220px;
-    /* border-radius: 5px; хотел округлить края, но не работает
-     */
-
-
-}
 #cover {
     display: flex;
     flex-direction: column;
@@ -26,3 +6,62 @@
     margin-bottom: 165px;
     
 }
+
+#video {
+    z-index: 2;
+    position: absolute;
+    top: 220px;
+   
+}
+  
+
+#baner_for_video {
+    width: 100%;
+    height: 570px; 
+    background-image: url(./img/google.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    z-index: 1;
+   
+}
+
+
+
+ 
+@media(max-width:970px) {
+    #cover {
+        max-width: 768px;
+    }
+    /* #video {    Не могу адаптировать видео. Гугл говрит делать так, но у меня есть 
+        еще один блок, из-за которого все видимо ломается
+
+        overflow:hidden;
+        position:relative;
+        padding-bottom:56.25%;
+        padding-top:30px;
+        height:0;
+      }
+      .youtube {
+        position:absolute;
+        width:100%;
+        height:100%;
+        left:0;
+        top:0;
+      } */
+}
+@media(max-width:750px) {
+    #cover {
+      max-width: 375px;
+  }
+  @media(max-width: 375px) {
+    #cover {
+        max-width: 375px;
+    }
+    #baner_for_video {
+        max-width: 375px;
+
+    }
+}
+} 

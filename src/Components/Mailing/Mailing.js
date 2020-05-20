@@ -7,7 +7,7 @@ const Mailing  = () => {
   return (
     <div className = "mailingBox">
         <div className = "line2" />
-            <div >
+            <div id = "subscription">
                 <h3 className = "text_for_content1">Подпишись на наш спам!</h3>
                 <h2 className = "text_for_content2">Бесполезные статьи, письма и новости - получи это сейчас!</h2>
             <form className = "mailingForm">

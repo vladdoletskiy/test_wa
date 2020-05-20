@@ -11,24 +11,24 @@ const Footer = () => {
               <h3 className = "list_name">Контакты</h3>
               <a className = "list_link" href = "#"> &#9993; google@google.com</a>
               <a className = "list_link" href = "#"> &#9742; + 1 650 253 0000</a>
-              <a className = "list_link" href = "#"> &#9992; 1600 Amphiteatre Pkwy, <br></br>
-                                                            Mountaim View, <br></br>CA 94043, USA</a>
+              <a className = "list_link" href = "#"> &#9992; 1600 Amphiteatre Pkwy, <br />
+                                                            Mountaim View, <br />CA 94043, USA</a>
           </div>
-          <div className = "list">
+          <div className = "contacts list">
               <h3 className = "list_name">Наши проекты</h3>
               <a className = "list_link" href = "#"> &#9658; Google</a>
               <a className = "list_link" href = "#"> &#9658; Facebook</a>
               <a className = "list_link" href = "#"> &#9658; Telegram</a>
               <a className = "list_link" href = "#"> &#9658; Yandex</a>
           </div>
-          <div className = "list">
+          <div className = "contacts list">
               <h3 className = "list_name">Не наши проекты</h3>
               <a className = "list_link" href = "#"> &#9658; Uber</a>
               <a className = "list_link" href = "#"> &#9658; Monobank</a>
               <a className = "list_link" href = "#"> &#9658; Converse</a>
               <a className = "list_link" href = "#"> &#9658; Dior</a>
           </div>
-          <div className = "list">
+          <div className = "contacts list">
               <h3 className = "list_name">Просто слова</h3>
               <a className = "list_link" href = "#"> &#9658; Утка</a>
               <a className = "list_link" href = "#"> &#9658; Мотыга</a>

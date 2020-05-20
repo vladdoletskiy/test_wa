@@ -20,20 +20,26 @@ const Content = () => {
                 </h2>
             </div>
             <div className = "contentbox2">
-                <img src = {logo} className = "image"/>
+                <div className = "adeptiv_img">
+                <img src = {logo} className = "image" alt = "Упс"/>
+                </div>
                 <div className = "minicont">
                     <h1 className = "fun_advert">Instagram</h1>
                     <h2 className = "fun_advert2">Это мы придумали <br/>
                     фоткать еду</h2>
                 </div>
+                <div className = "adeptiv_img">
                 <img src = {logo2} className = "image"/>
+                </div>
                 <div className = "minicont">
                     <h1 className = "fun_advert">Facebook</h1>
                     <h2 className = "fun_advert2">Это мы придумали <br />
                     лайкать бывшего</h2>
                 </div>
+                <div className = "adeptiv_img">
                 <img src = {logo3} className = "image"/>
-                <div className = "minicont">
+                </div>
+                <div id = "wiki" className = "minicont">
                     <h1 className = "fun_advert">Wikipedia</h1>
                     <h2 className = "fun_advert2">Это мы написали реферат <br />
                     для твоей сестры</h2>

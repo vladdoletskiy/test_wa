@@ -11,10 +11,10 @@ const Gallery  = () => {
     <div className="fotorama"
     data-transition="crossfade"
     data-loop="true">
-    <img src = {foto} />
-    <img src = {foto3} />
-    <img src = {foto4} />
-    <img src = {foto2} />
+    <img src = {foto} alt = "Упс"/>
+    <img src = {foto3} alt = "Упс"/>
+    <img src = {foto4} alt = "Упс"/>
+    <img src = {foto2} alt = "Упс"/>
   </div>
   )
 };
