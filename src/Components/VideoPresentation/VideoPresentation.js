@@ -15,6 +15,7 @@ const VideoPresentation = () => {
             picture-in-picture" 
             allowFullScreen /> 
         </div> 
+
   </div>
   )
 };
