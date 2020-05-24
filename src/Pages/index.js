@@ -1,7 +1,7 @@
 import Main from "./Main/Main";
-import News from "./News/News";
-import Projects from "./Projects/Projects";
-import Service from "./Service/Service";
+import About from "./About/About";
+import Project from "./Project/Project";
+import Users from "./Users/Users";
 
 
-export {Main, News, Projects, Service};
+export {Main, Project, Users, About};
