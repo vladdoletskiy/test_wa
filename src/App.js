@@ -1,34 +1,36 @@
 import React from 'react';
-import "./App.css";
+import './App.css';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-} from "react-router-dom";
+} from 'react-router-dom';
 
-import {Main, Users, About, Project } from './Pages/index.js';
+import {
+  Main, Users, About, Project,
+} from './Pages/index.js';
 
 function App() {
   return (
-    <div> 
+    <div>
       <Router>
         <Switch>
           <Route exact path="/">
             <Main />
-            </Route>
-            <Route path="/Users">
-            <Users/>
-            </Route>
-            <Route path="/About">
-            <About/>
-            </Route>
-            <Route path="/Project">
-            <Project/>
           </Route>
-        </Switch> 
-      </Router> 
-      </div>
-  )
-};
+          <Route path="/Users">
+            <Users />
+          </Route>
+          <Route path="/About">
+            <About />
+          </Route>
+          <Route path="/Project">
+            <Project />
+          </Route>
+        </Switch>
+      </Router>
+    </div>
+  );
+}
 
 export default App;
