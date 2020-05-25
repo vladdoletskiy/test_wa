@@ -7,7 +7,7 @@ import {
 } from 'react-router-dom';
 
 import {
-  Main, Users, About, Project,
+  Main, Users, About, Project,Modal
 } from './Pages/index.js';
 
 function App() {
@@ -27,6 +27,10 @@ function App() {
           <Route path="/Project">
             <Project />
           </Route>
+          <Route path="/Modal">
+            <Modal />
+          </Route>
+
         </Switch>
       </Router>
     </div>
