@@ -1,42 +1,20 @@
 import React from 'react';
-// import {
-//   BrowserRouter as Router,
-//   Switch,
-//   Route,
-//   Link
-// } from "react-router-dom";
-// import {Main, Project, Users, About } from './Components/Pages/index.js';
+import {
+  Link
+} from "react-router-dom";
 import './header.css';
 
 const Header = () => {
   return (
     <header className = "firstscreen">
       <div  id="baner"> 
-      {/* <Router>  */}
-        <div>
-        <nav className = "header">
-          <a className = "header_link" href="/">Главная</a>
-          <a className = "header_link" href="/">Наши проекты</a>
-          <a className = "header_link" href="/">Услуги</a>
-          <a className = "header_link" href="/">Новости</a>
-          <a className = "header_link" href="/">Вход</a>
-        </nav>
-          {/* <Switch>
-              <Route exact path="/">
-                <Main />
-              </Route>
-              <Route path="/Users">
-                <Users/>
-              </Route>
-              <Route path="/About">
-                <About/>
-              </Route>
-              <Route path="/Project">
-                <Project/>
-              </Route>
-            </Switch> */}
+        <div className = "header">
+         <Link className = "header_link" to="/">Главная</Link>
+          <Link className = "header_link" to="/Project">Наши проекты</Link>
+          <Link className = "header_link" to="/About">Услуги</Link>
+          <Link className = "header_link" to="/Users">Новости</Link>
+          <Link className = "header_link" to="/">Вход</Link>
         </div>
-          {/* </Router> */}
     <div className = "line"></div>
     <div className = "under_line">
         <h5 className = "headline">Передовая IT-студия</h5>

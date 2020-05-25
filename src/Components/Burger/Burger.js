@@ -4,11 +4,12 @@ import './burger.style.css';
 
 const Burger = () => {
     const buttonClick = () => {
-  
+        // this.setState((current) => ({ isOpen: !current.isOpen}))
   };
   return (
       <div> 
         <div id = "burger">
+        {/* <div class={`sidebar ${this.state.isOpen ? 'sidebar--open' : ''}`}>  */}
         <a id="open"  href="#" class="menu-btn">
         <span></span>
         </a>

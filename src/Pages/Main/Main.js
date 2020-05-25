@@ -7,7 +7,7 @@ import VideoPresentation from "../../Components/VideoPresentation/VideoPresentat
 import Mailing from "../../Components/Mailing/Mailing";
 import Footer from "../../Components/Footer";
 import Burger from "../../Components/Burger/Burger";
-
+import Navigation from "../../Components/Navigation/Navigation";
 
 const Main = () => {
     return (

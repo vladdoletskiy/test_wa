@@ -1,16 +1,36 @@
 import React from 'react';
 import "./App.css";
-
-
-import {Main } from './Pages/index.js';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+// import Navigation from "../src/Components/Navigation/Navigation";
+import Header from "../src/Components/Firstscreen/Header/Header";
+import {Main, Users, About, Project } from './Pages/index.js';
 
 function App() {
   return (
     <div> 
-  
-    <Main/>
-    </div>
-    
+      <Router>
+        <Header/>
+        {/* <Navigation/> */}
+        <Switch>
+          <Route exact path="/">
+            <Main />
+            </Route>
+            <Route path="/Users">
+            <Users/>
+            </Route>
+            <Route path="/About">
+            <About/>
+            </Route>
+            <Route path="/Project">
+            <Project/>
+          </Route>
+        </Switch> 
+      </Router> 
+      </div>
   )
 };
 
