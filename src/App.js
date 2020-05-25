@@ -1,24 +1,34 @@
 import React from 'react';
-import Header from "./Components/Firstscreen/Header/Header";
-import Content from "./Components/Secondscreen/Content";
-import MoreContent from "./Components/Content1/MoreContent";
-import Gallery from "./Components/Gallery/Gallery";
-import VideoPresentation from "./Components/VideoPresentation/VideoPresentation";
-import Mailing from "./Components/Mailing/Mailing";
-import Footer from "./Components/Footer";
+import "./App.css";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+
+import {Main, Users, About, Project } from './Pages/index.js';
 
 function App() {
   return (
     <div> 
-    <Header />
-    <Content />
-    <MoreContent />
-    <Gallery/>
-    <VideoPresentation/>
-    <Mailing/>
-    <Footer/>
-    </div>
-  );
-}
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Main />
+            </Route>
+            <Route path="/Users">
+            <Users/>
+            </Route>
+            <Route path="/About">
+            <About/>
+            </Route>
+            <Route path="/Project">
+            <Project/>
+          </Route>
+        </Switch> 
+      </Router> 
+      </div>
+  )
+};
 
 export default App;
