@@ -5,16 +5,13 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-// import Navigation from "../src/Components/Navigation/Navigation";
-import Header from "../src/Components/Firstscreen/Header/Header";
+
 import {Main, Users, About, Project } from './Pages/index.js';
 
 function App() {
   return (
     <div> 
       <Router>
-        <Header/>
-        {/* <Navigation/> */}
         <Switch>
           <Route exact path="/">
             <Main />
