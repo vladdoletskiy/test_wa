@@ -1,5 +1,6 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
+import { withRouter, Link } from 'react-router-dom';
+import '../../Components/Firstscreen/Header/header.css';
 
 class Project extends React.Component {
   constructor(props) {
@@ -17,8 +18,22 @@ class Project extends React.Component {
     render() {
     return (
     <div>
-    <div>Наши проекты</div>
-    <button onClick={this.onLogout} className="button_modal">Log out</button>
+    <header className="firstscreen">
+      <div id="baner">
+        <div className="header">
+          <Link className="header_link" to="/">Главная</Link>
+          <Link className="header_link" to="/Project">Наши проекты</Link>
+          <Link className="header_link" to="/About">Услуги</Link>
+          <Link className="header_link" to="/Users">Новости</Link>
+          <Link className="header_link" onClick={this.onLogout}>Выход</Link>
+        </div>
+        <div className="line" />
+        <div className="under_line">
+          <div>Наши проекты</div>
+        </div>
+      </div>
+
+    </header>
     </div>
     );
   }
@@ -26,3 +41,4 @@ class Project extends React.Component {
 
 
 export default withRouter(Project);
+
