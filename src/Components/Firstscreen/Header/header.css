@@ -32,6 +32,13 @@
     color: white;
     text-decoration: none;
 }
+/* .header_link:hover {
+    text-decoration: underline;
+    transition: 1s;
+    letter-spacing: 5px;
+} */
+
+
 button:focus {
     outline: none;
 }
