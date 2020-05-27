@@ -7,7 +7,7 @@ class Project extends React.Component {
       super(props);
       const isAuth = sessionStorage.getItem("IS_AUTH") === "true";
       if (!isAuth) {
-          props.history.replace("/");
+          // props.history.replace("/");
       }
   }
     onLogout = () => {
@@ -15,26 +15,18 @@ class Project extends React.Component {
       this.props.history.replace("/");
     };
 
+  get = () => {
+    fetch ("https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Cocktail")
+    .then((res) => res.json())
+    .then((res) => {
+    console.log(res);
+    });
+  }
+    
+
     render() {
     return (
-    <div>
-    <header className="firstscreen">
-      <div id="baner">
-        <div className="header">
-          <Link className="header_link" to="/">Главная</Link>
-          <Link className="header_link" to="/Project">Наши проекты</Link>
-          <Link className="header_link" to="/About">Услуги</Link>
-          <Link className="header_link" to="/Users">Новости</Link>
-          <Link className="header_link" onClick={this.onLogout}>Выход</Link>
-        </div>
-        <div className="line" />
-        <div className="under_line">
-          <div>Наши проекты</div>
-        </div>
-      </div>
-
-    </header>
-    </div>
+      <div>Project</div>
     );
   }
 }

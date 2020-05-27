@@ -52,7 +52,7 @@ const MoreContent = () => {
         <div className = "our_projects">
 
           {logoList.map((item) => (
-            <div className = "logo_projects">
+            <div key={item.img} className = "logo_projects">
               <img className = "img_logo" alt = "Упс" src = {item.img} />
               <h6 className = "text_logo">{item.title()}</h6>
             </div>
