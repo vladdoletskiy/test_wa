@@ -12,7 +12,6 @@ import Burger from "../../Components/Burger/Burger";
 const Main = () => {
     return (
     <div>
-    <Header />
     <Burger/>
     <Content />
     <MoreContent />

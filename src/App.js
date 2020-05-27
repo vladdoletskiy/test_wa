@@ -10,10 +10,13 @@ import {
   Main, Users, About, Project,Modal
 } from './Pages/index.js';
 
+import Header from "./Components/Firstscreen/Header/Header";
+
 function App() {
   return (
     <div>
       <Router>
+        <Header />
         <Switch>
           <Route exact path="/">
             <Main />

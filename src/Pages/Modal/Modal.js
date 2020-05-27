@@ -25,7 +25,7 @@ class Modal extends React.Component {
         (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(this.state.email))
   {
         sessionStorage.setItem("IS_AUTH", true);
-        this.props.history.push("/project");
+        this.props.history.push("/Project");
     } else {
         this.setState({ emailError: "email is not valide"});
     } 
@@ -35,33 +35,19 @@ class Modal extends React.Component {
 
     render() {
     return (
-    <div>
-        
-        <header className="firstscreen">
-      <div id="baner" className="baner">
-        <div className="header">
-          <Link className="header_link" to="/">Главная</Link>
-          <Link className="header_link" to="/Project">Наши проекты</Link>
-          <Link className="header_link" to="/About">Услуги</Link>
-          <Link className="header_link" to="/Users">Новости</Link>
-          <Link className="header_link" to="/Modal">Вход</Link>
+      <div style={{ position: 'absolute', top: '20%'}} className="under_line form">
+        <div>
+          <input className="input_auth" onChange={this.onChange("email")} value={this.state.email} placeholder="e-mail"/>
         </div>
-        <div className="line" />
-            <div className="under_line form">
-                <div> 
-                <input className="input_auth" onChange={this.onChange("email")} value={this.state.email} placeholder="e-mail"/>
-                </div>
-                <div className="error">{this.state.emailError}</div>
-                <div> 
-                <input className="input_auth"type="password" onChange={this.onChange("pass")} value={this.state.pass} placeholder="password"/>
-                </div>
-            <div>
-                <button onClick={this.onSubmit} disabled={!(this.state.email && this.state.pass)} className="button_modal">Submit</button>
-            </div>
-            </div>
+        <div className="error">{this.state.emailError}</div>
+        <div>
+          <input className="input_auth"type="password" onChange={this.onChange("pass")} value={this.state.pass} placeholder="password"/>
+        </div>
+        <div>
+          <button onClick={this.onSubmit} disabled={!(this.state.email && this.state.pass)} className="button_modal">Submit</button>
+        </div>
       </div>
-    </header>
-    </div>);
+    );
   }
 }
 
