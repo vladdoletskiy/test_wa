@@ -15,6 +15,16 @@ class Project extends React.Component {
       this.props.history.replace("/");
     };
 
+
+    const get = () => {
+    fetch ("http://localhost:3004/posts")
+    .then((res) => res.json())
+    .then((res) => {
+      console.log(res);
+    })
+  } 
+    
+
     render() {
     return (
     <div>
@@ -30,6 +40,9 @@ class Project extends React.Component {
         <div className="line" />
         <div className="under_line">
           <div>Наши проекты</div>
+          <div>
+            <button onClick={get}>get</button>
+          </div>
         </div>
       </div>
 
