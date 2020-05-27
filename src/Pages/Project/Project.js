@@ -15,14 +15,13 @@ class Project extends React.Component {
       this.props.history.replace("/");
     };
 
-
-    const get = () => {
-    fetch ("http://localhost:3004/posts")
-    .then((res) => res.json())
-    .then((res) => {
-      console.log(res);
-    })
-  } 
+  get = () => {
+  fetch ("https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Cocktail")
+  .then((res) => res.json())
+  .then((res) => {
+  console.log(res);
+  });
+  }
     
 
     render() {
@@ -41,11 +40,13 @@ class Project extends React.Component {
         <div className="under_line">
           <div>Наши проекты</div>
           <div>
-            <button onClick={get}>get</button>
+            <button onClick={this.get}>get</button>
+          </div>
+          <div>
+            
           </div>
         </div>
       </div>
-
     </header>
     </div>
     );
