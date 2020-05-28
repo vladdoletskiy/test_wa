@@ -29,6 +29,7 @@
     border-radius: 0px 30px 30px 0px;
     border-style: none;
     color: white;
+    outline: none;
 }
 input::placeholder {
     width: 117px;

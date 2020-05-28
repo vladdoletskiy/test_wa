@@ -1,4 +1,7 @@
 import React from 'react';
+import Cover from "../../Components/Cover/Cover";
+import Footer from '../../Components/Footer';
+
 
 class About extends React.Component {
     constructor() {
@@ -7,6 +10,7 @@ class About extends React.Component {
             items: []
         }
     }
+
 
     componentDidMount(){
       fetch ("https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Cocktail")
@@ -19,9 +23,10 @@ class About extends React.Component {
   render() {
       return(
           <div>
+            <Cover/>
               <div>
                  {this.state.items.map(({ idDrink, strDrink, strDrinkThumb}) => (
-                     <div key={idDrink}>
+                     <div key={idDrink} >
                        <div>{strDrink}</div>
                        <img src={strDrinkThumb} alt={idDrink}/>
                      </div>
