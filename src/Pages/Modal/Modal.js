@@ -1,7 +1,9 @@
 import React from "react";
 import "../Modal/modal.style.css";
+import Cover from "../../Components/Cover/Cover";
+import Footer from "../../Components/Footer";
 
-import { withRouter, Link } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 
 class Modal extends React.Component {
   constructor(props) {
@@ -35,7 +37,9 @@ class Modal extends React.Component {
 
     render() {
     return (
-      <div style={{ position: 'absolute', top: '20%'}} className="under_line form">
+      <div>
+      
+      <div style={{ position: 'absolute', top: '20%'}} className="form">
         <div>
           <input className="input_auth" onChange={this.onChange("email")} value={this.state.email} placeholder="e-mail"/>
         </div>
@@ -46,6 +50,10 @@ class Modal extends React.Component {
         <div>
           <button onClick={this.onSubmit} disabled={!(this.state.email && this.state.pass)} className="button_modal">Submit</button>
         </div>
+      
+      </div>
+      <Cover/>
+      <Footer/>
       </div>
     );
   }

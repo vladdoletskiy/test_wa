@@ -1,6 +1,8 @@
 import React from 'react';
-
-const Users = () => <div>Услуги</div>;
+import Cover from "../../Components/Cover/Cover";
+const Users = () => <div>
+    <Cover/>
+</div>;
 
 
 export default Users;
