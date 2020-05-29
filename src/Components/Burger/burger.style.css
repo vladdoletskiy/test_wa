@@ -3,9 +3,11 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    z-index: 100;
-    position: relative;
-    top: -815px;
+    z-index: 199;
+    position: absolute;
+    margin-left: 320px;
+    margin-top: 10px;
+    
     }
     
 
@@ -53,26 +55,32 @@
     align-items: center;    
     flex-direction: column;
     width: 300px;
-    height: 93%;
+    height: 795px;
     background-color: rgb(21, 27, 88);
     position: absolute;
     padding-top: 60px;
     top: 0;
     right: -300px;
-    z-index: 40;
+    z-index: 9999;
+   
 }
 
 .sidebar--open {
-        left: 0px;
-        animation: 1s open;
+        right: 0px;
+        animation: 3s open;
+       
       }
 
-      @keyframes open {
+    @keyframes open {
         from {
           right: -300px;
         }
         to {
-          right: 0;
+          right: 0px;
         }
       }
     }
+
+    
+ 
+  

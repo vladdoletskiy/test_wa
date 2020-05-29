@@ -1,7 +1,7 @@
 import React from 'react';
-import Cover from "../../Components/Cover/Cover";
 import Footer from '../../Components/Footer';
 import "../About/about.style.css";
+import Burger from "../../Components/Burger/Burger";
 
 
 class About extends React.Component {
@@ -24,6 +24,7 @@ class About extends React.Component {
   render() {
       return(
           <div>
+            <Burger/>
               <div className="nasa_container">
               {this.state.items.map((nasa, id) => (
                   <div key={id} className="nasa">

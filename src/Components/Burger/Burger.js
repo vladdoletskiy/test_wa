@@ -10,23 +10,25 @@ class Burger extends React.Component {
 
         };
     }
-        // this.setState((current) => ({ isOpen: !current.isOpen}))
+
+
+        onClick = () => {
+            this.setState((current) => ({ isOpen: !current.isOpen}))
+        };
 
   render(){  
         return (
       <div> 
-        <div id = "burger">
-        {/* <div class={`sidebar ${this.state.isOpen ? 'sidebar--open' : ''}`}>  */}
-        <a id="open"  href="#" className="menu-btn">
+        <div id = "burger" >
+        <a id="open" onClick={this.onClick}  className="menu-btn">
         <span></span>
         </a>
         </div>
-        <div id = "sidebare">
+        <div id = "sidebare" class={`sidebar ${this.state.isOpen ? 'sidebar--open' : ''}`}>
             <Link className="header_link" to="/">Главная</Link>
             <Link className="header_link" to="/Project">Наши проекты</Link>
-            <Link className="header_link" to="/About">Услуги</Link>
-            <Link className="header_link" to="/Users">Новости</Link>
-            <Link className="header_link" to="/Modal">Вход</Link>
+            <Link className="header_link" to="/About">Космос</Link>
+            <Link className="header_link" to="/Users">Книги</Link>
         </div>
         </div>
     )

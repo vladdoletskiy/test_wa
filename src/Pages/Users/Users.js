@@ -1,45 +1,59 @@
-import React from 'react';
-// import Cover from "../../Components/Cover/Cover";
-// import Footer from "../../Components/Footer";
+import React, { useState } from 'react';
+import axios from 'axios';
 import  "./user.css";
 
 
-class Users extends React.Component {
-    constructor() {
-        super();
-        this.state = {
-            items: []
-        }
-    }
 
 
-    componentDidMount() {
-      fetch(
-        "http://localhost:3004/posts"
-      )
-        .then(res => res.json())
-        .then(data => this.setState({ items: [data] }));
-    }
+function Users() {
+  const [books, setBooks] = useState(null);
 
-  render() {
-      return(
-          <div>
-                   <div className="nasa_container">
-              {this.state.items.map((list) => (
-                  <div key={list.id} className="nasa">
-                      <h1>{list.posts.title}</h1>
-                      <h2>{list.posts.author}</h2>
-          </div>
-        ))}
+  const fetchData = async () => {
+    const response = await axios.get(
+      'https://www.anapioficeandfire.com/api/books?pageSize=30'
+    );
+
+    setBooks(response.data);
+  };
+
+  return (
+    <div className="App">
+      <h1>Это мы придумали Игры престолов</h1>
+      <h2>Все части!!!</h2>
+
+      
+      <div>
+        <button className="fetch-button" onClick={fetchData}>
+          Fetch Data
+        </button>
+        <br />
+      </div>
+
+     
+      <div className="books">
+        {books &&
+          books.map((book, index) => {
+            const cleanedDate = new Date(book.released).toDateString();
+            const authors = book.authors.join(', ');
+
+            return (
+              <div className="book" key={index}>
+                <h3>Book {index + 1}</h3>
+                <h2>{book.name}</h2>
+
+                <div className="details">
+                  <p>👨: {authors}</p>
+                  <p>📖: {book.numberOfPages} pages</p>
+                  <p>🏘️: {book.country}</p>
+                  <p>⏰: {cleanedDate}</p>
+                </div>
               </div>
-            
-          </div>
-      ) 
-  }
-
-
+            );
+          })}
+      </div>
+      
+    </div>
+  );
 }
 
-
 export default Users;
-
