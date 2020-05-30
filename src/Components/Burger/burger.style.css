@@ -3,10 +3,10 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    z-index: 199;
+    z-index: 9999;
     position: absolute;
     margin-left: 320px;
-    margin-top: 10px;
+    margin-top: 10px; 
     
     }
     
@@ -61,13 +61,13 @@
     padding-top: 60px;
     top: 0;
     right: -300px;
-    z-index: 9999;
-   
+    z-index: 8888;
 }
 
-.sidebar--open {
-        right: 0px;
+
+#sidebare.sidebar--open {
         animation: 3s open;
+        right: 0;
        
       }
 
