@@ -4,6 +4,7 @@ import {
 } from 'react-router-dom';
 import { useHistory, useLocation } from 'react-router-dom'
 import './header.css';
+import Burger from "../../Burger/Burger";
 
 const Header = () => {
   const history = useHistory();
@@ -33,8 +34,8 @@ const Header = () => {
         <div className="header">
           <Link className="header_link" to="/">Главная</Link>
           <Link className="header_link" to="/Project">Наши проекты</Link>
-          <Link className="header_link" to="/About">Услуги</Link>
-          <Link className="header_link" to="/Users">Новости</Link>
+          <Link className="header_link" to="/About">Космос</Link>
+          <Link className="header_link" to="/Users">Книги</Link>
           {sessionStorage.getItem("IS_AUTH") === "true" ? (
             <Link onClick={onLogout} className="header_link" to="/">Выход</Link>
           ) : (

@@ -1,0 +1,21 @@
+.nasa_container {
+    display: flex;
+    justify-content: center;
+    z-index: 998;
+    
+}
+
+.nasa {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.explanation {
+    padding: 0 15px;
+}
+.img_1 {
+   max-width: 100%;
+}

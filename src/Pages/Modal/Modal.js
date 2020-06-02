@@ -2,6 +2,7 @@ import React from "react";
 import "../Modal/modal.style.css";
 import Cover from "../../Components/Cover/Cover";
 import Footer from "../../Components/Footer";
+import Burger from "../../Components/Burger/Burger";
 
 import { withRouter } from 'react-router-dom';
 
@@ -38,7 +39,7 @@ class Modal extends React.Component {
     render() {
     return (
       <div>
-      
+      <Burger/>
       <div style={{ position: 'absolute', top: '20%'}} className="form">
         <div>
           <input className="input_auth" onChange={this.onChange("email")} value={this.state.email} placeholder="e-mail"/>
